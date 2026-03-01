@@ -1,59 +1,72 @@
 @import "tailwindcss";
 
-:root {
+/* ===============================
+   Tailwind v4 Theme Tokens
+   =============================== */
+
+@theme {
+
   /* Base */
-  --background: #f4f8f6;
-  --foreground: #0b1f17;
+  --color-background: #064e38;
+  --color-foreground: #0b1f17;
+
+  --color-nav-bg: #1a251d;
+  --color-nav-text: #5e655d;
 
   /* Emerald Scale */
-  --emerald-50:  #e8f3ef;
-  --emerald-100: #cfe6dd;
-  --emerald-200: #a8d4c3;
-  --emerald-300: #79bfa6;
-  --emerald-400: #4ea889;
-  --emerald-500: #1f7a5c; /* Primary Emerald */
-  --emerald-600: #18664c;
-  --emerald-700: #134f3b;
-  --emerald-800: #0d382a;
-  --emerald-900: #07231a;
+  --color-emerald-50:  #e8f3ef;
+  --color-emerald-100: #cfe6dd;
+  --color-emerald-200: #a8d4c3;
+  --color-emerald-300: #79bfa6;
+  --color-emerald-400: #4ea889;
+  --color-emerald-500: #1f7a5c; /* Primary Emerald */
+  --color-emerald-600: #18664c;
+  --color-emerald-700: #134f3b;
+  --color-emerald-800: #0d382a;
+  --color-emerald-900: #07231a;
 
-  /* Premium Accent (Subtle Gold) */
-  --accent-gold: #c6a75e;
-  --accent-gold-soft: #e6d3a3;
+  /* Accent */
+  --color-accent-gold: #c6a75e;
+  --color-accent-gold-soft: #e6d3a3;
 
   /* Surfaces */
-  --card-bg: #ffffff;
-  --card-border: #dbe7e2;
+  --color-card-bg: #ffffff;
+  --color-card-border: #dbe7e2;
 
   /* Muted */
-  --muted-bg: #edf4f1;
-  --muted-text: #4c5e57;
+  --color-muted-bg: #edf4f1;
+  --color-muted-text: #4c5e57;
 
   /* States */
-  --success: #15803d;
-  --warning: #d4a017;
-  --error: #b91c1c;
+  --color-success: #15803d;
+  --color-warning: #d4a017;
+  --color-error: #b91c1c;
 
   /* Shadow Tint */
-  --shadow-emerald: rgba(15, 56, 42, 0.15);
+  --shadow-emerald: 0 10px 30px rgba(15, 56, 42, 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ===============================
+   Dark Mode Support
+   =============================== */
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #dff8ee;
-    --foreground: #ededed;
+  @theme {
+    --color-background: #07231a;
+    --color-foreground: #ededed;
+    --color-card-bg: #0d382a;
   }
 }
 
+/* ===============================
+   Base Styling
+   =============================== */
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, 'sans serif';
+  @apply bg-background text-foreground;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.convert_upper{
+  text-transform: uppercase;
 }
