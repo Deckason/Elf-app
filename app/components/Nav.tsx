@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/",           label: "Home" },
   { href: "/about",      label: "About" },
   { href: "/programmes", label: "Programmes" },
-  { href: "/donate",     label: "Donate" },
+  { href: "/donation",     label: "Donattions" },
 ];
 
 export default function Nav() {
@@ -72,7 +72,7 @@ export default function Nav() {
         {/* Desktop Buttons */}
         <div className="hidden md:flex gap-[10px]">
           <Link
-            href="/auth"
+            href="/auth/login"
             className="px-5 py-2 rounded-[4px] text-[0.68rem] font-medium tracking-[0.15em] uppercase transition-all duration-200"
             style={{
               border: "1px solid rgba(168,230,216,0.22)",
@@ -91,7 +91,7 @@ export default function Nav() {
             Log In
           </Link>
           <Link
-            href="/auth?tab=signup"
+            href="/auth/signup"
             className="px-[22px] py-2 rounded-[4px] text-[0.68rem] font-semibold tracking-[0.15em] uppercase transition-all duration-200 hover:-translate-y-px hover:brightness-110"
             style={{ background: "var(--gold)", color: "var(--ink)", border: "none" }}
           >

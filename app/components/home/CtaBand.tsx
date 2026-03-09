@@ -84,7 +84,7 @@ export default function CtaBand() {
               Your gift feeds a child, supports a mother, and strengthens a community for decades to come.
             </p>
             <Link
-              href="/donate"
+              href="/donation"
               className="inline-flex items-center gap-[9px] px-[30px] py-[14px] rounded-[4px] text-[0.7rem] font-semibold tracking-[0.2em] uppercase transition-all duration-200 hover:-translate-y-[2px] hover:brightness-110"
               style={{ background: "var(--gold)", color: "var(--ink)" }}
             >
