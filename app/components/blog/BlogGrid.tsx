@@ -2,8 +2,8 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { BlogPost } from "@/app/lib/types/Blog";
-import { formatDate, readingTime } from "@/app/lib/blog-utils";
+import { BlogPost } from "@/lib/types/Blog";
+import { formatDate, readingTime } from "@/lib/blog-utils";
 // import { BlogPost } from "@/types/blog";
 // import { formatDate, readingTime } from "@/lib/blog-utils";
 

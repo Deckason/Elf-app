@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { BlogPost } from "@/app/lib/types/Blog";
-import { formatDate, readingTime } from "@/app/lib/blog-utils";
+import { BlogPost } from "@/lib/types/Blog";
+import { formatDate, readingTime } from "@/lib/blog-utils";
 // import Footer from "@/components/Footer";
 // import { BlogPost } from "../lib/types/Blog";
 // import { formatDate, readingTime } from "../lib/blog-utils";
