@@ -2,7 +2,7 @@ import Link from "next/link";
 // import Footer from "@/components/Footer";
 import PageBanner from "../components/PageBanner";
 import BlogGrid from "../components/blog/BlogGrid";
-import { BlogPost } from "../lib/types/Blog";
+import { BlogPost } from "../../lib/types/Blog";
 // import BlogGrid from "@/components/blog/BlogGrid";
 // import { BlogPost } from "@/types/blog";
 
