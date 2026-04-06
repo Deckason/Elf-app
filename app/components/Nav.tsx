@@ -29,30 +29,6 @@ export default function Nav() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 cursor-pointer">
           <ElojeLogo />
-          <div style={{ lineHeight: 1 }}>
-            <b
-              className="block"
-              style={{
-                fontFamily: "var(--font-cormorant), Georgia, serif",
-                fontSize: "1.15rem",
-                fontWeight: 700,
-                color: "var(--pale)",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Eleje
-            </b>
-            <small
-              className="block mt-[2px]"
-              style={{
-                fontSize: "0.5rem",
-                letterSpacing: "0.5em",
-                color: "var(--glow)",
-              }}
-            >
-              Legacy
-            </small>
-          </div>
         </Link>
 
         {/* Desktop Links */}
