@@ -38,15 +38,29 @@ const team = [
   { initials: "IA", name: "Ifeanyi Agu",       role: "Community Engagement", bg: "linear-gradient(135deg,#148a80,#064E38)" },
 ];
 
+const structure = [
+  {
+    date: "January 18, 2019",
+    title: "Eleje Legacy Foundation",
+    text: "Established in Nigeria. Functions as the operating organization executing projects on the ground.",
+  },
+  {
+    date: "January 2, 2020",
+    title: "Elejelegacy Inc.",
+    text: "Incorporated in the United States as a 501(c)(3) nonprofit. Serves as the parent organization of Eleje Legacy Foundation.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
       <PageBanner
-        label="About Eleje Legacy"
+        label="About Elejelegacy Inc."
         title={
           <>
-            Rooted in community.<br />
-            <em style={{ fontStyle: "italic", color: "var(--glow)" }}>Built for generations.</em>
+            Empowering Women.<br />
+            Strengthening Families.<br />
+            <em style={{ fontStyle: "italic", color: "var(--glow)" }}>Building Futures.</em>
           </>
         }
       />
@@ -64,19 +78,23 @@ export default function AboutPage() {
 
             {[
               <>
-                Eleje Legacy is a Nigerian non-governmental organisation founded in Onitsha, Anambra State, in 2024. We work at the intersection of{" "}
-                <strong style={{ color: "var(--deep)", fontWeight: 600 }}>maternal health, early childhood development, and community economic empowerment</strong>
-                {" "}— three pillars we believe are inseparable.
+                Elejelegacy Inc. is a{" "}
+                <strong style={{ color: "var(--deep)", fontWeight: 600 }}>U.S.-based 501(c)(3) nonprofit organization</strong>
+                {" "}dedicated to empowering women, strengthening families, and creating opportunities for children in underserved communities in Nigeria.
               </>,
               <>
-                Our name — <strong style={{ color: "var(--deep)", fontWeight: 600 }}>Eleje</strong> — means "one who nurtures" in the Igbo tradition. It reflects our conviction that true development begins with the mother-child relationship, and that communities flourish when women are empowered, children are nourished, and legacies are intentionally built.
+                Through <strong style={{ color: "var(--deep)", fontWeight: 600 }}>Eleje Legacy Foundation</strong>, our Nigerian operating organization, we provide practical support that addresses immediate needs while creating pathways toward long-term economic independence and educational opportunity.
               </>,
               <>
-                We are <strong style={{ color: "var(--deep)", fontWeight: 600 }}>grassroots by design</strong>. Every programme we run is co-created with the communities we serve. We do not impose solutions from the outside — we sit with families, listen to their needs, and build responses that are dignified, sustainable, and locally owned.
+                Each year, we provide{" "}
+                <strong style={{ color: "var(--deep)", fontWeight: 600 }}>food and clothing assistance to approximately 1,500 women</strong>
+                {" "}and empower{" "}
+                <strong style={{ color: "var(--deep)", fontWeight: 600 }}>60 women</strong>
+                {" "}with financial support to start or expand small businesses and trades.
               </>,
               <>
-                Our vision is a Nigeria where no mother faces the journey of parenthood alone, and where every child — regardless of circumstance —{" "}
-                <strong style={{ color: "var(--deep)", fontWeight: 600 }}>inherits a future worth living</strong>.
+                Our goal is to help women build sustainable sources of income, provide for their families with dignity, and{" "}
+                <strong style={{ color: "var(--deep)", fontWeight: 600 }}>create more secure futures for their children</strong>.
               </>,
             ].map((para, i) => (
               <p
@@ -149,6 +167,216 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+
+      {/* Mission & Vision */}
+      <section className="pb-[88px]">
+        <div className="section-wrap">
+          <div className="eyebrow">
+            <div className="ey-dash" />
+            <span className="ey-txt">Mission &amp; Vision</span>
+          </div>
+          <h2
+            className="mb-[48px]"
+            style={{
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              fontSize: "clamp(2rem, 3.8vw, 3rem)",
+              fontWeight: 600,
+              lineHeight: 1.1,
+              color: "var(--deep)",
+            }}
+          >
+            Investing in mothers,{" "}
+            <em style={{ fontStyle: "italic", color: "var(--emerald)" }}>and in their children</em>
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {/* Mission */}
+            <div
+              className="rounded-[16px] p-6 sm:p-[34px]"
+              style={{ background: "#fff", border: "1px solid var(--border)", boxShadow: "0 4px 20px var(--shadow)" }}
+            >
+              <h3
+                className="mb-[14px]"
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  fontSize: "1.6rem",
+                  fontWeight: 700,
+                  color: "var(--deep)",
+                }}
+              >
+                Our Mission
+              </h3>
+              <p
+                className="mb-4"
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontSize: "0.88rem",
+                  lineHeight: 1.9,
+                  color: "var(--grey)",
+                }}
+              >
+                To empower women and strengthen families by providing women in Nigeria with the resources, opportunities, and support they need to achieve economic independence, provide for their families, and create a brighter future for their children.
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontSize: "0.88rem",
+                  lineHeight: 1.9,
+                  color: "var(--grey)",
+                }}
+              >
+                We address both immediate and long-term needs through food and clothing assistance, women&apos;s economic empowerment, and support for children&apos;s education. We believe a woman&apos;s journey toward independence cannot be separated from the future of her children. Mothers who work hard to keep their children in school should have the assurance that those children can access the educational resources they need to learn, grow, and succeed.
+              </p>
+            </div>
+
+            {/* Vision */}
+            <div
+              className="rounded-[16px] p-6 sm:p-[34px]"
+              style={{ background: "var(--warm)", borderLeft: "3px solid var(--gold)" }}
+            >
+              <h3
+                className="mb-[14px]"
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  fontSize: "1.6rem",
+                  fontWeight: 700,
+                  color: "var(--deep)",
+                }}
+              >
+                Our Vision
+              </h3>
+              <p
+                className="mb-4"
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontSize: "0.88rem",
+                  lineHeight: 1.9,
+                  color: "var(--grey)",
+                }}
+              >
+                Thriving communities where women are economically empowered, families are secure, and every child, regardless of where they are born, has access to the resources and opportunities needed to receive a quality education and build a promising future.
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontStyle: "italic",
+                  fontSize: "0.97rem",
+                  lineHeight: 1.75,
+                  color: "var(--deep)",
+                }}
+              >
+                Our ultimate vision is to empower today&apos;s mothers to build stronger families and equip tomorrow&apos;s generation with the knowledge, confidence, and opportunities to thrive.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <p
+              className="mb-4 max-w-[640px]"
+              style={{
+                fontFamily: "var(--font-lora), Georgia, serif",
+                fontSize: "0.88rem",
+                lineHeight: 1.9,
+                color: "var(--grey)",
+              }}
+            >
+              We believe access to quality educational resources should not be determined by where a child is born. A book can open a child&apos;s imagination; a computer can open a world of knowledge; and a good learning environment can open the door to opportunity.
+            </p>
+            <Link href="/project" className="pcard-link">
+              See the library we built →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Legacy & organizational structure */}
+      <section className="py-[92px] overflow-hidden" style={{ background: "var(--ink)" }}>
+        <div className="section-wrap">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[76px] items-start">
+            <div>
+              <div className="eyebrow">
+                <div className="ey-dash" style={{ background: "var(--glow)" }} />
+                <span className="ey-txt" style={{ color: "var(--glow)" }}>The Legacy Behind Our Work</span>
+              </div>
+              <h2
+                className="mb-5"
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  fontSize: "clamp(2rem, 3.8vw, 3rem)",
+                  fontWeight: 600,
+                  lineHeight: 1.1,
+                  color: "var(--cream)",
+                }}
+              >
+                In honour of{" "}
+                <em style={{ fontStyle: "italic", color: "var(--glow)" }}>Chief Inya Eleje</em>
+              </h2>
+              {[
+                "Elejelegacy Inc. was established in honor of the memory and legacy of our beloved father, Chief Inya Eleje, whose life continues to inspire a commitment to service, compassion, and community.",
+                "Founded by Dr. Beatrice Onyeador, Elejelegacy Inc. carries this legacy forward by investing in women today so that families can have greater hope and opportunity tomorrow. His legacy lives on through every woman given an opportunity, every family strengthened, and every child given greater hope for the future.",
+              ].map((t, i) => (
+                <p
+                  key={i}
+                  className="mb-4"
+                  style={{
+                    fontFamily: "var(--font-lora), Georgia, serif",
+                    fontSize: "0.92rem",
+                    lineHeight: 1.95,
+                    color: "rgba(250,246,239,0.55)",
+                  }}
+                >
+                  {t}
+                </p>
+              ))}
+            </div>
+
+            <div>
+              <div className="eyebrow">
+                <div className="ey-dash" style={{ background: "var(--glow)" }} />
+                <span className="ey-txt" style={{ color: "var(--glow)" }}>Organizational Structure</span>
+              </div>
+              <div className="flex flex-col gap-3 mt-4">
+                {structure.map((s) => (
+                  <div
+                    key={s.title}
+                    className="rounded-[11px] p-5"
+                    style={{
+                      background: "rgba(255,255,255,0.04)",
+                      border: "1px solid rgba(168,230,216,0.09)",
+                    }}
+                  >
+                    <div
+                      className="mb-[6px]"
+                      style={{
+                        fontSize: "0.6rem",
+                        letterSpacing: "0.28em",
+                        textTransform: "uppercase",
+                        color: "var(--glow)",
+                      }}
+                    >
+                      {s.date}
+                    </div>
+                    <div
+                      style={{
+                        fontFamily: "var(--font-cormorant), Georgia, serif",
+                        fontSize: "1.2rem",
+                        fontWeight: 600,
+                        color: "var(--pale)",
+                        marginBottom: 4,
+                      }}
+                    >
+                      {s.title}
+                    </div>
+                    <div style={{ fontSize: "0.78rem", lineHeight: 1.7, color: "rgba(250,246,239,0.40)" }}>
+                      {s.text}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Team section */}
       <section className="py-[88px]" style={{ background: "var(--warm)" }}>
