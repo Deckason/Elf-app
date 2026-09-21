@@ -16,15 +16,48 @@ function HeroSection() {
       style={{ background: "var(--ink)" }}
     >
       {/* Diagonal shape */}
+            {/* Diagonal shape — holds the hero video */}
       <div
-        className="absolute right-0 top-0 hidden lg:block"
+        className="absolute right-0 top-0 hidden lg:block overflow-hidden"
         style={{
           width: "50%",
           height: "100%",
+          /* shows while the video loads */
           background: "linear-gradient(158deg, var(--deep) 0%, #0b6347 55%, #0e7f5a 100%)",
           clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 4% 54%)",
         }}
-      />
+      >
+        <video
+          src="/video/market_shots.mov"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: "saturate(0.8) contrast(1.05)" }}
+        />
+
+        {/* Brand tint: pulls the footage into the emerald palette */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(158deg, rgba(6,78,56,0.78) 0%, rgba(11,99,71,0.50) 55%, rgba(12,24,16,0.60) 100%)",
+          }}
+        />
+        {/* Soft fade into the ink background along the cut edge */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "linear-gradient(90deg, rgba(12,24,16,0.60) 0%, transparent 30%)" }}
+        />
+        {/* Bottom vignette */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "linear-gradient(0deg, rgba(12,24,16,0.55) 0%, transparent 35%)" }}
+        />
+      </div>
       {/* Radial glow */}
       <div
         className="absolute pointer-events-none rounded-full"
@@ -59,7 +92,7 @@ function HeroSection() {
               color: "var(--glow)",
             }}
           >
-            NGO · Est. 2024 · Onitsha, Nigeria
+            501(c)(3) Nonprofit · Serving Nigeria
           </span>
         </div>
 
@@ -74,9 +107,9 @@ function HeroSection() {
             color: "var(--cream)",
           }}
         >
-          Nurturing<br />
-          <em style={{ fontStyle: "italic", color: "var(--glow)" }}>Growth.</em>
-          <br />Sustaining<br />Legacies.
+          Empowering<br />
+          <em style={{ fontStyle: "italic", color: "var(--glow)" }}>Women.</em>
+          <br />Strengthening<br />Families.<br />Building Futures.
         </h1>
 
         <p
@@ -88,7 +121,7 @@ function HeroSection() {
             color: "rgba(250,246,239,0.54)",
           }}
         >
-          Eleje Legacy empowers mothers, protects children, and builds communities that thrive — not just today, but across generations.
+          Elejelegacy Inc. empowers women, strengthens families, and creates opportunities for children in underserved communities in Nigeria — building pathways to economic independence and educational opportunity.
         </p>
 
         {/* Actions */}
@@ -119,9 +152,9 @@ function HeroSection() {
           style={{ borderTop: "1px solid rgba(168,230,216,0.09)" }}
         >
           {[
-            { n: "1,200+", l: "Mothers Supported" },
-            { n: "3,400+", l: "Children Reached" },
-            { n: "18+",    l: "Communities" },
+            { n: "~1,500", l: "Women Assisted Yearly" },
+            { n: "60",     l: "Women Funded Annually" },
+            { n: "1",      l: "Modern Library Built" },
           ].map((s) => (
             <div key={s.l}>
               <div
@@ -154,6 +187,7 @@ function HeroSection() {
       {/* RIGHT — Visual */}
       <div className="hidden lg:flex relative z-10 items-center justify-center p-20 anim-fade-in">
         <div className="relative">
+          
           {/* Brand mark */}
           {/* <ElojeLogo width={300} height={300} /> */}
           {/* <ElojeLogo
@@ -225,10 +259,10 @@ function HeroSection() {
 
 function ImpactSection() {
   const cards = [
-    { icon: "🤱", n: "1,200+", l: "Mothers supported through ante & postnatal care" },
-    { icon: "👶", n: "3,400+", l: "Children reached through nutrition & education" },
-    { icon: "🌱", n: "18",     l: "Communities across Anambra with active programmes" },
-    { icon: "📚", n: "94%",    l: "Of beneficiaries report improved household wellbeing" },
+    { icon: "🧺", n: "~1,500", l: "Women receive food and clothing assistance each year" },
+    { icon: "💼", n: "60",     l: "Women empowered annually with cash support to start or expand a trade or small business" },
+    { icon: "📚", n: "1",      l: "Ultra-modern, technology-equipped library built in a rural primary school" },
+    { icon: "💻", n: "10",     l: "Computers, with books, solar power and borehole water supporting the library" },
   ];
 
   return (
@@ -289,29 +323,29 @@ function ImpactSection() {
 }
 
 function ProgrammesPreview() {
-  const cards = [
-    {
-      chip: "Maternal Health",
-      bg: "linear-gradient(160deg,#064E38,#0D6E4F)",
-      title: "Mother & Child Care",
-      desc: "Free clinic visits, nutritional support, and health education for mothers and newborns in underserved communities.",
-      chipColor: "white",
-    },
-    {
-      chip: "Education",
-      bg: "linear-gradient(160deg,#0D6E4F,#10B981)",
-      title: "Legacy Learning",
-      desc: "Early childhood centres, school feeding, and scholarships to keep every child in school and thriving.",
-      chipColor: "white",
-    },
-    {
-      chip: "Empowerment",
-      bg: "linear-gradient(160deg,#10B981,#34D399)",
-      title: "Women in Growth",
-      desc: "Vocational skills, microfinance access, and cooperative groups to build economic independence for mothers.",
-      chipColor: "var(--deep)",
-    },
-  ];
+    const cards = [
+      {
+        chip: "Relief",
+        bg: "linear-gradient(160deg,#064E38,#0D6E4F)",
+        title: "Food & Clothing Assistance",
+        desc: "Each year, approximately 1,500 women receive food and clothing assistance that meets immediate needs and gives families room to build.",
+        chipColor: "white",
+      },
+      {
+        chip: "Empowerment",
+        bg: "linear-gradient(160deg,#0D6E4F,#10B981)",
+        title: "Women's Economic Empowerment",
+        desc: "60 women each year receive financial support to start or expand small businesses and trades, building sustainable sources of income.",
+        chipColor: "white",
+      },
+      {
+        chip: "Education",
+        bg: "linear-gradient(160deg,#10B981,#34D399)",
+        title: "Children's Education",
+        desc: "An ultra-modern library with books, 10 computers, solar power and borehole water gives children in a rural community access to quality learning.",
+        chipColor: "var(--deep)",
+      },
+    ];
 
   return (
     <section className="py-[92px]">
@@ -432,7 +466,7 @@ function StorySection() {
                     lineHeight: 1,
                   }}
                 >
-                  2024
+                  2019
                 </div>
                 <div style={{ fontSize: "0.48rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--ink)", textAlign: "center", marginTop: 2 }}>
                   Est.<br />Nigeria
@@ -499,7 +533,7 @@ function StorySection() {
                 color: "rgba(250,246,239,0.55)",
               }}
             >
-              Eleje Legacy was born from a simple conviction: that every mother deserves support and every child deserves a future worth inheriting. Founded in Onitsha, we work grassroots — community by community, mother by mother.
+              Elejelegacy Inc. was established in honor of the memory and legacy of our beloved father, Chief Inya Eleje, whose life inspires a commitment to service, compassion, and community. Founded by Dr. Beatrice Onyeador, we invest in women today so that families and children have greater hope tomorrow.
             </p>
             <Link
               href="/about"

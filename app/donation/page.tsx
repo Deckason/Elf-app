@@ -38,6 +38,35 @@ export default function DonatePage() {
 
           {/* Right sidebar */}
           <div>
+                        {/* Donor message */}
+            <div
+              className="rounded-[13px] p-6 mb-8"
+              style={{ background: "var(--deep)" }}
+            >
+              <p
+                className="mb-3"
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  fontSize: "1.35rem",
+                  fontWeight: 600,
+                  lineHeight: 1.3,
+                  color: "var(--cream)",
+                }}
+              >
+                We don&apos;t simply give women assistance. We invest in their ability to build a future — and in the children who will inherit that future.
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontSize: "0.84rem",
+                  lineHeight: 1.75,
+                  color: "rgba(250,246,239,0.6)",
+                }}
+              >
+                When a woman has the means to provide for her family and her child has access to the tools needed to learn, the possibility of lasting change becomes greater. This is how we create sustainable impact — one woman, one child, one family, and one community at a time.
+              </p>
+            </div>
+            
             <h3
               className="mb-5"
               style={{

@@ -338,6 +338,118 @@ export default function ProjectsPage() {
           </div>
         )}
 
+                {/* Community investment — Children's education library */}
+        <div className="mb-14">
+          <div className="eyebrow mb-5">
+            <div className="ey-dash" />
+            <span className="ey-txt">Community Investment</span>
+          </div>
+          <div
+            className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] rounded-[20px] overflow-hidden"
+            style={{
+              background: "#fff",
+              border: "1px solid var(--border)",
+              boxShadow: "0 8px 36px var(--shadow)",
+            }}
+          >
+            {/* Visual panel */}
+            <div
+              className="min-h-[220px] lg:min-h-[340px] relative overflow-hidden flex items-start p-8"
+              style={{ background: "linear-gradient(140deg, var(--emerald) 0%, var(--mid) 60%, #34D399 100%)" }}
+            >
+              <div className="absolute top-8 right-8 w-36 h-36 rounded-full opacity-10"
+                style={{ border: "1px solid var(--pale)" }} />
+              <div className="absolute top-16 right-16 w-20 h-20 rounded-full opacity-10"
+                style={{ border: "1px solid var(--deep)" }} />
+              <div className="flex items-center gap-3 relative z-10">
+                <span
+                  className="text-[0.56rem] tracking-[0.28em] uppercase px-3 py-[5px] rounded-[2px]"
+                  style={{
+                    background: "rgba(255,255,255,0.14)", color: "white",
+                    border: "1px solid rgba(255,255,255,0.2)",
+                  }}
+                >
+                  Children&apos;s Education
+                </span>
+                <span
+                  className="text-[0.54rem] tracking-[0.22em] uppercase px-[10px] py-[4px] rounded-full"
+                  style={{
+                    background: "rgba(0,0,0,0.28)",
+                    color: "var(--pale)",
+                    border: "1px solid rgba(168,230,216,0.33)",
+                  }}
+                >
+                  Completed
+                </span>
+              </div>
+            </div>
+
+            {/* Content panel */}
+            <div className="p-8 lg:p-10 flex flex-col justify-center">
+              <h2
+                className="mb-4"
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)",
+                  fontWeight: 700,
+                  color: "var(--deep)",
+                  lineHeight: 1.18,
+                }}
+              >
+                An ultra-modern library for a rural primary school
+              </h2>
+              <p
+                className="mb-5"
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontSize: "0.9rem",
+                  lineHeight: 1.82,
+                  color: "var(--grey)",
+                }}
+              >
+                In an otherwise rural area, we built an ultra-modern library at a premier primary school to give children access to resources that might otherwise be unavailable to them.
+              </p>
+              <ul className="list-none flex flex-col gap-[10px] mb-5">
+                {[
+                  "Educational books and a dedicated space for reading and learning",
+                  "10 computers to support technology and digital learning",
+                  "Solar panels to provide a reliable source of electricity",
+                  "Borehole water infrastructure to support the library and school environment",
+                  "A modern, welcoming learning environment designed to encourage academic development",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <div
+                      className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-[2px]"
+                      style={{
+                        background: "var(--warm)",
+                        border: "1px solid var(--mid)",
+                        fontSize: "0.58rem",
+                        color: "var(--mid)",
+                      }}
+                    >
+                      ✓
+                    </div>
+                    <span style={{ fontSize: "0.82rem", lineHeight: 1.65, color: "var(--grey)" }}>
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <p
+                style={{
+                  fontFamily: "var(--font-lora), Georgia, serif",
+                  fontStyle: "italic",
+                  fontSize: "0.88rem",
+                  lineHeight: 1.75,
+                  color: "var(--deep)",
+                }}
+              >
+                Access to quality educational resources should not be determined by where a child is born.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* All projects grid */}
         <div className="eyebrow mb-8">
           <div className="ey-dash" />

@@ -8,8 +8,11 @@ import ElojeLogo from "./ui/ElojeLogo";
 const navLinks = [
   { href: "/",           label: "Home" },
   { href: "/about",      label: "About" },
+  { href: "/blog",       label: "Blog" },
+  { href: "/project",       label: "Projects" },
   { href: "/programmes", label: "Programmes" },
-  { href: "/donation",     label: "Donattions" },
+  { href: "/donation",     label: "Donations" },
+  { href: "/contact",       label: "Contact" },
 ];
 
 export default function Nav() {
