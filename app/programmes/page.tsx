@@ -48,8 +48,11 @@ export default function ProgrammesPage() {
         label="Our Programmes"
         title={
           <>
-            Planting seeds.<br />
-            <em style={{ fontStyle: "italic", color: "var(--glow)" }}>Harvesting futures.</em>
+            Planting seeds.
+            <br />
+            <em style={{ fontStyle: "italic", color: "var(--glow)" }}>
+              Harvesting futures.
+            </em>
           </>
         }
       />
@@ -71,7 +74,9 @@ export default function ProgrammesPage() {
             }}
           >
             Three pillars,{" "}
-            <em style={{ fontStyle: "italic", color: "var(--emerald)" }}>one mission</em>
+            <em style={{ fontStyle: "italic", color: "var(--emerald)" }}>
+              one mission
+            </em>
           </h2>
 
           {/* Programme cards grid */}
@@ -207,7 +212,8 @@ export default function ProgrammesPage() {
                     margin: "0 auto 16px",
                   }}
                 >
-                  Coming 2025 — Small grants for community-led health, education &amp; livelihood initiatives.
+                  Coming 2025 — Small grants for community-led health, education
+                  &amp; livelihood initiatives.
                 </p>
                 <span
                   className="inline-block px-[15px] py-[7px] rounded-[2px]"

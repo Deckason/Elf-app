@@ -32,10 +32,30 @@ const values = [
 ];
 
 const team = [
-  { initials: "AO", name: "Amara Okonkwo",   role: "Executive Director",  bg: "linear-gradient(135deg,#064E38,#10B981)" },
-  { initials: "CE", name: "Chidi Ezenwachi",  role: "Head of Programmes",  bg: "linear-gradient(135deg,#0D6E4F,#34D399)" },
-  { initials: "NU", name: "Ngozi Umezurike",  role: "Finance & Operations", bg: "linear-gradient(135deg,#C9A84C,#8B6914)" },
-  { initials: "IA", name: "Ifeanyi Agu",       role: "Community Engagement", bg: "linear-gradient(135deg,#148a80,#064E38)" },
+  {
+    initials: "AO",
+    name: "Amara Okonkwo",
+    role: "Executive Director",
+    bg: "linear-gradient(135deg,#064E38,#10B981)",
+  },
+  {
+    initials: "CE",
+    name: "Chidi Ezenwachi",
+    role: "Head of Programmes",
+    bg: "linear-gradient(135deg,#0D6E4F,#34D399)",
+  },
+  {
+    initials: "NU",
+    name: "Ngozi Umezurike",
+    role: "Finance & Operations",
+    bg: "linear-gradient(135deg,#C9A84C,#8B6914)",
+  },
+  {
+    initials: "IA",
+    name: "Ifeanyi Agu",
+    role: "Community Engagement",
+    bg: "linear-gradient(135deg,#148a80,#064E38)",
+  },
 ];
 
 const structure = [
@@ -68,7 +88,6 @@ export default function AboutPage() {
       {/* Main content */}
       <div className="section-wrap">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[68px] items-start py-[88px]">
-
           {/* Prose */}
           <div>
             <div className="eyebrow mb-4">
@@ -153,11 +172,21 @@ export default function AboutPage() {
                   <div>
                     <h4
                       className="mb-1"
-                      style={{ fontSize: "0.88rem", fontWeight: 600, color: "var(--deep)" }}
+                      style={{
+                        fontSize: "0.88rem",
+                        fontWeight: 600,
+                        color: "var(--deep)",
+                      }}
                     >
                       {v.title}
                     </h4>
-                    <p style={{ fontSize: "0.78rem", lineHeight: 1.7, color: "var(--grey)" }}>
+                    <p
+                      style={{
+                        fontSize: "0.78rem",
+                        lineHeight: 1.7,
+                        color: "var(--grey)",
+                      }}
+                    >
                       {v.text}
                     </p>
                   </div>
@@ -396,7 +425,9 @@ export default function AboutPage() {
             }}
           >
             The people behind{" "}
-            <em style={{ fontStyle: "italic", color: "var(--emerald)" }}>the mission</em>
+            <em style={{ fontStyle: "italic", color: "var(--emerald)" }}>
+              the mission
+            </em>
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-[18px]">
@@ -404,7 +435,10 @@ export default function AboutPage() {
               <div
                 key={m.name}
                 className="rounded-[13px] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                style={{ background: "#fff", border: "1px solid var(--border)" }}
+                style={{
+                  background: "#fff",
+                  border: "1px solid var(--border)",
+                }}
               >
                 <div
                   className="h-[162px] flex items-center justify-center"
