@@ -8,13 +8,11 @@ import ElojeLogo from "./ui/ElojeLogo";
 const navLinks = [
   { href: "/",           label: "Home" },
   { href: "/about",      label: "About" },
+  { href: "/blog",       label: "Blog" },
+  { href: "/project",       label: "Projects" },
   { href: "/programmes", label: "Programmes" },
-  { 
-    href: "https://app.autobooks.co/pay/eleje-legacy", // Or a different internal page route
-    label: "Donations", 
-    target: "_blank", 
-    rel: "noopener noreferrer" 
-  },
+  { href: "/donation",     label: "Donations" },
+  { href: "/contact",       label: "Contact" },
 ];
 
 export default function Nav() {

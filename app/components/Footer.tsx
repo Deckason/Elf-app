@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ElojeLogo from "./ui/ElojeLogo";
+import { get } from "http";
 
 interface FooterProps {
   minimal?: boolean;
@@ -14,17 +15,11 @@ export default function Footer({ minimal = false }: FooterProps) {
             className="flex flex-col sm:flex-row justify-between items-center gap-2 pt-6"
             style={{ borderTop: "1px solid rgba(168,230,216,0.07)" }}
           >
-            <p
-              className="text-[0.68rem]"
-              style={{ color: "rgba(250,246,239,0.2)" }}
-            >
-              © 2025 Eleje Legacy. All rights reserved.
+            <p className="text-[0.68rem]" style={{ color: "rgba(250,246,239,0.2)" }}>
+              © {new Date().getFullYear()} Elejelegacy Inc. All rights reserved.
             </p>
-            <p
-              className="text-[0.68rem]"
-              style={{ color: "rgba(250,246,239,0.2)" }}
-            >
-              304 Lakeview Avenue, Clifton, NJ 07011
+            <p className="text-[0.68rem]" style={{ color: "rgba(250,246,239,0.2)" }}>
+              501(c)(3) Nonprofit · Operating in Nigeria as Eleje Legacy Foundation
             </p>
           </div>
         </div>
@@ -112,9 +107,9 @@ export default function Footer({ minimal = false }: FooterProps) {
             </h5>
             <ul className="list-none flex flex-col gap-[10px]">
               {[
-                "Mother & Child Care",
-                "Legacy Learning",
-                "Women in Growth",
+                "Food & Clothing Assistance",
+                "Women's Economic Empowerment",
+                "Children's Education",
                 "Community Grants",
               ].map((label) => (
                 <li key={label}>
@@ -173,17 +168,11 @@ export default function Footer({ minimal = false }: FooterProps) {
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-2 pt-6">
-          <p
-            className="text-[0.68rem]"
-            style={{ color: "rgba(250,246,239,0.2)" }}
-          >
-            © 2026 Eleje Legacy. All rights reserved.
+          <p className="text-[0.68rem]" style={{ color: "rgba(250,246,239,0.2)" }}>
+            © {new Date().getFullYear()} Elejelegacy Inc. All rights reserved.
           </p>
-          <p
-            className="text-[0.68rem]"
-            style={{ color: "rgba(250,246,239,0.2)" }}
-          >
-            Registered NGO · Ebonyi State, Nigeria
+          <p className="text-[0.68rem]" style={{ color: "rgba(250,246,239,0.2)" }}>
+            501(c)(3) Nonprofit · Operating in Nigeria as Eleje Legacy Foundation
           </p>
         </div>
       </div>
