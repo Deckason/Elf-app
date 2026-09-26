@@ -146,6 +146,42 @@ function HeroSection() {
           </Link>
         </div>
 
+        {/* Mobile/tablet video — shown below text, hidden once the desktop diagonal panel kicks in */}
+        <div
+          className="lg:hidden mt-8 rounded-[14px] overflow-hidden relative anim-fade-up"
+          style={{
+            aspectRatio: "16/10",
+            background: "linear-gradient(158deg, var(--deep) 0%, #0b6347 55%, #0e7f5a 100%)",
+          }}
+        >
+          <video
+            src="/video/market_shots.mov"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: "saturate(0.8) contrast(1.05)" }}
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(158deg, rgba(6,78,56,0.55) 0%, rgba(11,99,71,0.30) 55%, rgba(12,24,16,0.40) 100%)",
+            }}
+          />
+        </div>
+
+        {/* Stats */}
+        <div
+          className="flex flex-wrap gap-8 sm:gap-10 mt-14 pt-7 anim-fade-up anim-fade-up-4"
+          style={{ borderTop: "1px solid rgba(168,230,216,0.09)" }}
+        >
+
+        </div>
+
         {/* Stats */}
         <div
           className="flex flex-wrap gap-8 sm:gap-10 mt-14 pt-7 anim-fade-up anim-fade-up-4"
@@ -188,69 +224,6 @@ function HeroSection() {
       <div className="hidden lg:flex relative z-10 items-center justify-center p-20 anim-fade-in">
         <div className="relative">
           
-          {/* Brand mark */}
-          {/* <ElojeLogo width={300} height={300} /> */}
-          {/* <ElojeLogo
-            // style={{ filter: "drop-shadow(0 0 48px rgba(52,211,153,0.18))" }}
-          >
-            <defs>
-              <linearGradient id="ga" x1="0%" y1="0%" x2="80%" y2="100%">
-                <stop offset="0%"   stopColor="#34D399" />
-                <stop offset="100%" stopColor="#064E38" />
-              </linearGradient>
-              <linearGradient id="gc" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%"   stopColor="#A8E6D8" />
-                <stop offset="100%" stopColor="#10B981" />
-              </linearGradient>
-            </defs>
-            <circle cx="118" cy="30" r="26" fill="url(#ga)" />
-            <path d="M96 52C118 58 140 78 145 106C154 140 140 182 112 200C96 210 76 210 62 200C48 190 40 172 40 154C56 164 76 165 90 152C108 136 110 106 98 78C88 56 70 44 56 40C68 30 82 42 96 52Z" fill="url(#ga)" />
-            <circle cx="64" cy="66" r="18" fill="url(#gc)" />
-            <path d="M46 84C28 100 22 124 28 146C32 164 48 178 66 180C72 160 74 136 76 112C74 94 62 80 46 84Z" fill="url(#gc)" />
-          </ElojeLogo> */}
-
-          {/* Float cards */}
-          {/* <div
-            className="absolute rounded-[13px] px-[17px] py-[13px] anim-float-2"
-            style={{
-              bottom: 18,
-              left: -26,
-              background: "rgba(10,22,14,0.88)",
-              border: "1px solid rgba(52,211,153,0.17)",
-              backdropFilter: "blur(10px)",
-            }}
-          >
-            <div style={{ fontSize: "0.56rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "var(--glow)", marginBottom: 2 }}>
-              This Month
-            </div>
-            <div style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontSize: "1.55rem", fontWeight: 700, color: "var(--pale)", lineHeight: 1 }}>
-              147
-            </div>
-            <div style={{ fontSize: "0.6rem", color: "var(--mgrey)", marginTop: 2 }}>
-              New beneficiaries enrolled
-            </div>
-          </div> */}
-
-          {/* <div
-            className="absolute rounded-[13px] px-[17px] py-[13px] anim-float-3"
-            style={{
-              top: 36,
-              right: -22,
-              background: "rgba(10,22,14,0.88)",
-              border: "1px solid rgba(52,211,153,0.17)",
-              backdropFilter: "blur(10px)",
-            }}
-          >
-            <div style={{ fontSize: "0.56rem", letterSpacing: "0.28em", textTransform: "uppercase", color: "var(--glow)", marginBottom: 2 }}>
-              Impact Goal
-            </div>
-            <div style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontSize: "1.55rem", fontWeight: 700, color: "var(--pale)", lineHeight: 1 }}>
-              ₦2.4M
-            </div>
-            <div style={{ fontSize: "0.6rem", color: "var(--mgrey)", marginTop: 2 }}>
-              Raised · 68% of target
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
@@ -616,7 +589,6 @@ function TestimonialsSection() {
                   marginBottom: 10,
                 }}
               >
-                "
               </div>
               <p
                 className="mb-5"
